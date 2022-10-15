@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --dark: #000;
+    --pink: rgb(252, 0, 168);
+    --light: #fff;
+}
+.header{
+    background-image: url('../img/que-es-Call-Center.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    color: var(--light);
+}
+.header .headerInfo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+.header nav{
+    display: flex;
+    color: var(--light);
+    gap: 2rem;
+    align-items: center;
+}
+.header nav a{
+    background: var(--pink);
+    padding: 0.5rem 1rem;
+    color: var(--light);
+    transition: all .3s;
+}
+.header nav a:hover{
+    position: relative;
+    background: rgba(248, 33, 165, 0.8);
+}
+.header nav p{
+    font-size: 15px;
+    font-weight: 700;
+}
+.header span{
+    font-weight: 800;
+}
+.header .texts{
+    padding: 6rem 5rem;
+}
+.header .texts p{
+    padding: 1rem 0;
+    width: 50%;
+    line-height: 1.5rem;
+}
+.header .texts a{
+    background: var(--pink);
+    color: var(--light);
+    padding: 0.8rem 1rem;
+    line-height: 4rem;
+    transition: all .3s;
+}
+.header .texts a:hover{
+    position: relative;
+    background: rgba(250, 38, 163, 0.8);
+}
+.header .essential{
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0 , 0 , 0, 0.7);
+    padding: 1.3rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    gap: 0.3rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* STYLING THE SECTION */
+.txt{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 130%;
+    text-align: left;
+}
+.txt h1{
+    text-align: center;
+    line-height: 3rem;
+}
+.txt span{
+    color: var(--pink);
+}
+.aboutUs{
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.image img{
+    width: 50%;
+}
+.image{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+.image .information{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+footer{
+    position: relative;
+    background-color: rgba(0 , 0 , 0, 0.7);
+    color: var(--light);
+    padding: 1.5rem 0;
+}
+footer p{
+    text-align: center;
+    font-weight: 800;
+}
+footer p span{
+    color: var(--pink);
+}
+/* HEADER RESPONSIVITY */
+@media screen and (max-width: 600px) {
+    .header .texts p{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 720px) {
+    .header{
+        background-position: center;
+    }
+    .header .headerInfo{
+        padding: 1rem 2rem;
+    }
+    .header .texts, .aboutUs{
+        padding: 3rem 2rem;
+    }
+    .header .essential{
+        width: 90%;
+        font-size: 10px;
+    }
+    .image{
+        flex-direction: column;
+        text-align: center;
+    }
+    .image img, .txt{
+        width: 100%;
+    }
+}
+

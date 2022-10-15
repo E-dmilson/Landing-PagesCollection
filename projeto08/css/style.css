@@ -1,0 +1,120 @@
+*, a{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --dark: #000;
+    --light: #fff;
+    --blue: rgb(10, 50, 182);
+}
+body{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.headerInfo{
+    background-image: url('../img/Why-Am-I-Not-Gaining-Weight-750x422.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--light);
+    text-transform: uppercase;
+    height: 100vh;
+}
+.headerInfo nav{
+    text-align: center;
+    padding: 1rem 0;
+}
+.headerInfo .texts-btn{
+    text-align: center;
+    padding: 10rem 0;
+}
+.headerInfo .texts-btn h1{
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 3.5rem;
+    margin-bottom: 3rem;
+}
+.headerInfo .texts-btn h1 span{
+    font-weight: 600;
+}
+.headerInfo .texts-btn a{
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 1rem 3rem;
+    border-radius: 15rem;
+    color: var(--light);
+    transition: all .3s;
+}
+.texts-btn a:hover{
+    background: rgba(202, 186, 186, 0.3);
+}
+.headerInfo .vsl{
+    width: 35%;
+    position: absolute;
+    left: 32%;
+    top: 70%;
+}
+.vsl video{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 15px solid var(--light);
+}
+
+
+.container{
+    display: flex;
+    padding: 8rem 8rem;
+    gap: 2rem;
+    text-align: center;
+}
+.container .item1 .cart, .item2 .cart, .item3 .cart{
+    background-color: var(--blue);
+    color: var(--light);
+    padding: 1rem 0;
+    text-transform: uppercase;
+}
+.cart p{
+    font-weight: 100;
+    color: rgb(206, 192, 192);
+}
+.container .item1 .txt, .item2 .txt, .item3 .txt{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer{
+    background-color: #222;
+    color: var(--light);
+    text-align: center;
+    padding: 1rem 0;
+}
+footer p{
+    font: normal 14pt arial;
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        padding: 8rem 3rem;
+    }
+}
+@media screen and (max-width: 838px) {
+    .vsl{
+        display: none;
+    }
+}
+@media screen and (max-width: 700px) {
+    .headerInfo{
+        background-position: center;
+    }
+    .headerInfo .texts-btn{
+        padding: 10rem 3rem;
+    }
+    .headerInfo .texts-btn h1{
+        font-size: 50px;
+    }
+    .container{
+        display: block;
+    }
+}
